@@ -94,12 +94,13 @@
 
 <meta name="description" content="努力去创造美好的事物！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jastyle's Life">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="Jastyle's Life">
 <meta property="og:description" content="努力去创造美好的事物！">
+<meta property="og:updated_time" content="2017-04-23T02:16:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jastyle's Life">
+<meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="努力去创造美好的事物！">
 
 
@@ -128,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/"/>
 
 
 
 
 
-  <title>归档 | Jastyle's Life</title>
+  <title>tags | Jastyle's Life</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +197,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -328,66 +329,27 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 1 篇日志。 继续努力。
-    </span>
+	<h1 class="post-title" itemprop="name headline">tags</h1>
+
+
+
+</header>
 
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+    
+      <div class="tag-cloud">
+        <div class="tag-cloud-title">
+            目前共计 2 个标签
         </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/20/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-20T19:58:44+08:00"
-              content="2017-04-20" >
-          04-20
-        </time>
+        <div class="tag-cloud-tags">
+          <a href="/tags/Another-Tag/" style="font-size: 12px; color: #ccc">Another Tag</a> <a href="/tags/Testing/" style="font-size: 12px; color: #ccc">Testing</a>
+        </div>
       </div>
-
-    </header>
-  </article>
-
-
-
     
-
-  </section>
-
-  
-
+  </div>
 
 
           </div>
@@ -395,6 +357,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="fb-comments"
+           data-href="http://yoursite.com/tags/index.html"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -635,12 +608,6 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
 
   
 
@@ -658,6 +625,18 @@
       <script id="dsq-count-scr" src="https://http-jastyle-github-io.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/tags/index.html';
+          this.page.identifier = 'tags/index.html';
+          this.page.title = 'tags';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://http-jastyle-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
@@ -817,26 +796,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
