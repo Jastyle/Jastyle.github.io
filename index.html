@@ -459,14 +459,31 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"> def unique(s):</div><div class="line">    &apos;&apos;&apos;return a list without duplicate element&apos;&apos;&apos;</div><div class="line">    try:</div><div class="line">       return set(s)</div><div class="line">    except TypeError:</div><div class="line">        pass</div><div class="line">    t = list(s)</div><div class="line">    try:</div><div class="line">        t.sort()</div><div class="line">    except TypeError:</div><div class="line">        del t</div><div class="line">    else:</div><div class="line">        return [x for i, x in enumerate(t) if not i or x != t[i-1]]</div><div class="line">     </div><div class="line">    u = []</div><div class="line">    for x in s:</div><div class="line">        if x not in u:</div><div class="line">            u.append(x)</div><div class="line">    return u</div><div class="line"> </div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    s = [1, 2, 3, 5, 6, 6, 5]</div><div class="line">    print unique(s)</div><div class="line"> ```   </div><div class="line">## Quick Start</div><div class="line"></div><div class="line">### Create a new post</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo new &quot;My New Post&quot;</div></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<pre><code class="python"> <span class="function"><span class="keyword">def</span> <span class="title">unique</span><span class="params">(s)</span>:</span>
+    <span class="string">'''return a list without duplicate element'''</span>
+    <span class="keyword">try</span>:
+       <span class="keyword">return</span> set(s)
+    <span class="keyword">except</span> TypeError:
+        <span class="keyword">pass</span>
+    t = list(s)
+    <span class="keyword">try</span>:
+        t.sort()
+    <span class="keyword">except</span> TypeError:
+        <span class="keyword">del</span> t
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> [x <span class="keyword">for</span> i, x <span class="keyword">in</span> enumerate(t) <span class="keyword">if</span> <span class="keyword">not</span> i <span class="keyword">or</span> x != t[i<span class="number">-1</span>]]
+
+    u = []
+    <span class="keyword">for</span> x <span class="keyword">in</span> s:
+        <span class="keyword">if</span> x <span class="keyword">not</span> <span class="keyword">in</span> u:
+            u.append(x)
+    <span class="keyword">return</span> u
+
+<span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+    s = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">5</span>]
+    <span class="keyword">print</span> unique(s)
+</code></pre>
 
           
         
